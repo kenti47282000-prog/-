@@ -1,0 +1,168 @@
+HTML
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游氏宗親智慧管理系統 - 和陽樓</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #ffffff; }
+        .serif-font { font-family: 'Noto Serif TC', serif; }
+        .hero-bg {
+            background-color: #fcfaf5;
+            /* 這裡預設您的背景裝飾圖檔名，若無可刪除此行 */
+            background-image: url('背景裝飾.png'); 
+            background-position: right top;
+            background-repeat: no-repeat;
+            background-size: 35%;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .card-shadow:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <nav class="flex justify-between items-center px-10 py-5 bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 border-2 border-black rounded-full flex items-center justify-center font-bold text-xl">游</div>
+            <div>
+                <h1 class="text-xl font-bold tracking-tight">游氏宗親智慧管理系統</h1>
+                <p class="text-[10px] text-gray-400 tracking-widest">傳承祖德 · 聚集宗情 · 智慧轉型</p>
+            </div>
+        </div>
+        <div class="hidden lg:flex items-center space-x-8 text-sm font-medium">
+            <a href="#" class="hover:text-amber-800">首頁</a>
+            <a href="#" class="hover:text-amber-800 text-amber-900">雲端族譜</a>
+            <a href="#" class="hover:text-amber-800">祭祀管理</a>
+            <a href="#" class="hover:text-amber-800">宗親活動</a>
+            <a href="#" class="hover:text-amber-800 text-gray-400">登入系統</a>
+        </div>
+    </nav>
+
+    <header class="hero-bg py-16 px-10 border-b border-gray-50">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start">
+            <div class="mb-8 md:mb-0 mr-12">
+                <div class="bg-white p-1 shadow-md mb-3 border border-gray-100">
+                    <img src="和陽樓.jpg" alt="和陽樓" class="w-56 h-auto object-cover">
+                </div>
+                <div class="pl-3 border-l-4 border-amber-800">
+                    <p class="text-xs font-bold text-gray-800">桃園市-蘆竹鄉-錦中街32號</p>
+                    <p class="text-[10px] text-gray-500 mt-1">和陽樓</p>
+                </div>
+            </div>
+
+            <div class="flex-1 pt-2">
+                <div class="inline-block border border-amber-600 text-amber-700 px-5 py-1 rounded-full text-[10px] mb-6 font-bold bg-white/50">
+                    數位化推進推進委員會
+                </div>
+                <h2 class="text-5xl font-bold mb-6 serif-font tracking-[0.2em] text-gray-800">傳承祖德 · 聚集宗情</h2>
+                <p class="text-gray-500 mb-10 max-w-2xl leading-relaxed text-sm">
+                    結合現代科技與傳統文化，讓家族歷史永續傳承，讓親情感緊密連結。
+                </p>
+                
+                <div class="relative max-w-lg">
+                    <i class="fa-solid fa-magnifying-glass absolute left-5 top-1/2 -translate-y-1/2 text-gray-300"></i>
+                    <input type="text" placeholder="請輸入宗親姓名或昭穆輩分..." class="w-full py-4 pl-12 pr-32 rounded-lg border border-gray-200 focus:outline-none focus:ring-1 focus:ring-amber-500 shadow-sm">
+                    <button class="absolute right-2 top-2 bottom-2 bg-amber-800 text-white px-6 rounded hover:bg-amber-900 transition text-sm">查詢系統</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-10">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h3 class="text-3xl font-bold mb-4 serif-font">智慧管理功能</h3>
+            <p class="text-gray-400 text-sm">透過數位化工具，我們將繁雜的宗族事務轉化為便利的雲端服務。</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="bg-white border border-gray-100 rounded card-shadow flex flex-col">
+                <div class="h-48 overflow-hidden bg-gray-50">
+                    <img src="數位族譜.jpg" alt="數位族譜" class="w-full h-full object-cover">
+                </div>
+                <div class="p-8 text-center flex-1 flex flex-col">
+                    <div class="w-10 h-10 border border-gray-200 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-400">
+                        <i class="fa-solid fa-user-group text-sm"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-4">數位族譜</h4>
+                    <p class="text-gray-500 text-xs leading-loose mb-6">視覺家族樹狀圖，輕鬆查詢代系傳承與祖籍資料。</p>
+                    <a href="#" class="mt-auto text-xs font-bold text-amber-900">了解更多 →</a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded card-shadow flex flex-col">
+                <div class="h-48 overflow-hidden bg-gray-50">
+                    <img src="祭祀日曆.jpg" alt="祭祀日曆" class="w-full h-full object-cover">
+                </div>
+                <div class="p-8 text-center flex-1 flex flex-col">
+                    <div class="w-10 h-10 border border-gray-200 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-400">
+                        <i class="fa-solid fa-calendar-days text-sm"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-4">祭祀日曆</h4>
+                    <p class="text-gray-500 text-xs leading-loose mb-6">掌握重要祭祖時程、春祭與秋祭公告，及時提醒不遺漏。</p>
+                    <a href="#" class="mt-auto text-xs font-bold text-amber-900">了解更多 →</a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded card-shadow flex flex-col">
+                <div class="h-48 overflow-hidden bg-gray-50">
+                    <img src="宗親活動.jpg" alt="宗親活動" class="w-full h-full object-cover">
+                </div>
+                <div class="p-8 text-center flex-1 flex flex-col">
+                    <div class="w-10 h-10 border border-gray-200 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-400">
+                        <i class="fa-solid fa-book text-sm"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-4">宗親活動</h4>
+                    <p class="text-gray-500 text-xs leading-loose mb-6">安全儲存各地宗親聯絡方式，促進各房分會交流互動。</p>
+                    <a href="#" class="mt-auto text-xs font-bold text-amber-900">了解更多 →</a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded card-shadow flex flex-col">
+                <div class="h-48 overflow-hidden bg-gray-50">
+                    <img src="財務透明.jpg" alt="財務透明" class="w-full h-full object-cover">
+                </div>
+                <div class="p-8 text-center flex-1 flex flex-col">
+                    <div class="w-10 h-10 border border-gray-200 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-400">
+                        <i class="fa-solid fa-chart-simple text-sm"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-4">財務透明</h4>
+                    <p class="text-gray-500 text-xs leading-loose mb-6">透明化的宗廟收支記錄，線上處罰與電子收支記錄開立。</p>
+                    <a href="#" class="mt-auto text-xs font-bold text-amber-900">了解更多 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-10 mb-20">
+        <div class="bg-white border border-gray-200 rounded-lg p-12 flex flex-col md:flex-row justify-between items-center shadow-lg border-t-4 border-t-amber-800">
+            <div class="mb-8 md:mb-0">
+                <h3 class="text-2xl font-bold mb-3 serif-font">加入數位宗親會</h3>
+                <p class="text-gray-400 text-sm">立即註冊帳號，完善個人資料。您的參與是家族傳承的重要力量。</p>
+            </div>
+            <div class="flex space-x-4">
+                <button class="px-8 py-3 border border-gray-200 rounded text-sm hover:bg-gray-50 transition">了解詳情</button>
+                <button class="px-8 py-3 bg-gray-800 text-white rounded text-sm hover:bg-black transition">立即註冊</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-50 py-12 px-10">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between text-xs text-gray-400">
+            <p>© 2025 全球游氏宗親俱樂部 版權所有</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <span>聯絡信箱：kenti47282000@gmail.com</span>
+                <span>電話：0937171474</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
